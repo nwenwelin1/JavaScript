@@ -1,0 +1,22 @@
+
+#sec,section{
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 15px;
+    background-color: gainsboro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+p{
+    display: block;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    padding: 10px;
+}
+.glyphicon,button,input[type="text"]{
+    border-radius: 5px;
+    color: black;
+    border: 1px solid greenyellow;
+}
+
