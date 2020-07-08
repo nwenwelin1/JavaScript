@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/budget-cal.css">
+    <script src="js/budget-cal.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div>
+            <h1>BUDGET APP</h1>
+        </div>
+        <div class="row">
+            <div class="first">
+                <label for="">Please Enter Your Budget</label> <br> <br>
+                <input type="text" name="" id="inputBudget"> <br> <br>
+                <button onclick="getBudget();">Calculate</button>
+            </div>
+
+            <div class="labels">
+                <h4>BUDGET</h4>
+                <p><i class="fa fa-money" style="font-size:25px;color:seagreen"></i></p>
+                <p><i class="fa fa-dollar" style="font-size:25px;color:green"></i></p>
+                <label for="" id="bLabel" style="font-size:25px;color:green"></label>
+            </div>
+            
+            <div class="labels">
+                <h4>EXPENSE</h4>
+                <p><i class="fa fa-credit-card" style="font-size:25px;color: seagreen;"></i></p>
+                <p><i class="fa fa-dollar" style="font-size:25px;color:red;"></i></p>  
+                <label for="" id="expense" style="font-size:25px;color:red"></label>
+            </div>
+            <div class="labels">
+                <h4>BALANCE</h4>
+                <p><i class="fa fa-dollar" style="font-size:25px;color:green"></i></p>
+                <p><i class="fa fa-dollar" style="font-size:25px;color:green;"></i></p>
+                <label for="" id="balance" style="font-size:25px;color:green;"></label>
+            </div>
+        
+
+            <div class="second">
+                <label for="">Please Enter Your Expense</label> <br> <br>
+                <input type="text" name="" id="inputExpense"> <br> <br>
+                <label for="">Please Enter Expense Amount</label><br> <br>
+                <input type="text" name="" id="inputEAmount"> <br> <br>
+                <button onclick="getAddExpense();">Add Expense</button>
+            </div>
+            <div id="display">
+                <table id="disp">
+                    <tr>
+                        <th>Expense Title</th>
+                        <th>Expense Value</th>
+                        <th>&nbsp;&nbsp;</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
