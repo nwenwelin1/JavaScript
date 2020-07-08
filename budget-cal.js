@@ -1,7 +1,6 @@
 var totalBudget=0;
 function getBudget(){
     var budget=$("#inputBudget").val() || 0;
-    alert(budget);
     totalBudget+=parseInt(budget);
     $("#bLabel").text(totalBudget);
     getBalance();
