@@ -32,20 +32,13 @@ function getAddExpense(){
 function getBalance(){
     $("#balance").text(parseInt(totalBudget)-parseInt(totalExpense));
 }
-// function deleteItem(k){
-//     $("#"+k).remove();
-//     totalExpense-=expenseList[k].amt;
-//     $("#expense").text(totalExpense);
-//     delete expenseList[k];
-//     delete iconList[k]; 
-//     getBalance();
-// }
-
-function editItem(i){
-    $("#inputExpense").text(expenseList[i].title);
-    $("#inputEAmount").text(expenseList[i].amt);
-        var fieldID = $("#"+i).prev().attr("id");
-        $('#' + fieldID).val("hello world");
+function deleteItem(k){
+    $("#"+k).remove();
+    totalExpense-=expenseList[k].amt;
+    $("#expense").text(totalExpense);
+    delete expenseList[k];
+    delete iconList[k]; 
+    getBalance();
 }
 
 function clearText(){
