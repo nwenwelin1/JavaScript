@@ -41,6 +41,13 @@ function deleteItem(k){
     getBalance();
 }
 
+function editItem(i){
+    $("#inputExpense").text(expenseList[i].title);
+    $("#inputEAmount").text(expenseList[i].amt);
+        var fieldID = $("#"+i).prev().attr("id");
+        $('#' + fieldID).val("hello world");
+}
+
 function clearText(){
     $("#inputExpense").val(" ");
     $("#inputEAmount").val(" ");
