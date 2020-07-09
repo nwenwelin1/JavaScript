@@ -6,7 +6,7 @@ body{
 #content{
     border: 0px solid gray;
     width: 80%;
-    background-image: linear-gradient(rgb(99, 183, 185),rgba(217, 213, 242, 0.09));
+    background-image: linear-gradient(rgba(16, 190, 205, 0.85),#2fd960);
     box-shadow: paleturquoise(32, 125, 156);
     padding: 10px;
     border-radius: 5px;
