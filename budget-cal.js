@@ -4,7 +4,6 @@ function getBudget(){
     totalBudget+=parseInt(budget);
     $("#bLabel").text(totalBudget);
     getBalance();
-    clearText();
 }
 
 var n=0,str="";;
@@ -26,7 +25,6 @@ function getAddExpense(){
    $("#disp").append(str);
    $("#expense").text(totalExpense);
     getBalance();
-    clearText();
 }
 
 function getBalance(){
@@ -46,10 +44,4 @@ function editItem(i){
     $("#inputEAmount").text(expenseList[i].amt);
         var fieldID = $("#"+i).prev().attr("id");
         $('#' + fieldID).val("hello world");
-}
-
-function clearText(){
-    $("#inputExpense").val(" ");
-    $("#inputEAmount").val(" ");
-    $("#inputBudget").val(" ");
 }
