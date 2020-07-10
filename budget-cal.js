@@ -34,8 +34,6 @@ function deleteItem(k){
     $("#"+k).remove();
     totalExpense-=expenseList[k].amt;
     $("#expense").text(totalExpense);
-    delete expenseList[k];
-    delete iconList[k]; 
     getBalance();
 }
 
