@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/food.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/food.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="food_category.html">Manage Category</a>
+     
+        <a href="food_menu.html">Manage Menu</a>
+ 
+        <a href="food_order.html">Manage Order</a>
+    </nav>
+    <div id="all">
+        <div id="titleBar" >
+            <div id="our_menu">
+                <img src="images/foodIcon.jpg" alt="FoodIcon" style="margin-left: 22px;">
+                <h3 style="color: orange;">OUR MENU</h3>
+                <img src="images/foodIcon.jpg" alt="FoodIcon">
+            </div>
+            <ul id="cateList">
+                <script>
+                    showCategoryList();
+                </script>
+            </ul>        
+        </div>
+        <div id="viewMenu">
+            <div class="searchDiv">
+                <input type="search" name="" id="search" placeholder="search our menu..">
+                <span><i class="fa fa-search"></i></span>
+            </div>
+            
+            <div id="viewItem">
+                <h3 id="title"></h3>
+                <script>
+                    viewFoodList();
+                </script>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
