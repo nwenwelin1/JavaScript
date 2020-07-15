@@ -1,0 +1,116 @@
+
+#all{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2%;
+}
+#our_menu{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3px;
+}
+#our_menu>img{
+    background-color: #ffa500;
+    width: 60px;
+    height:60px;
+    color: white;
+}
+.searchDiv{
+    display: flex;
+    margin-bottom: 3px;
+    border: 5px solid white;
+}
+#search{
+    width: 100%;
+    padding: 10px;
+    margin-right: 0px;
+    border-color: white;
+    color: orange;
+}
+span{
+    padding: 10px;
+    float: right;
+    border: 0px;
+    background-color: white;
+}
+#titleBar{
+    grid-column: 1/2;
+}
+li{
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    color: white;
+}
+
+#viewMenu{
+    grid-column: 2/4;
+    margin-top: 10px;
+}
+.item{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+.item>img{
+    border-radius: 4px;
+}
+section{
+    padding: 10px;
+}
+.orderBtn{
+    background-color: rgb(7, 7, 58);
+    color: white;
+    padding: 5px;
+    border: 0px;
+}
+.item>img{
+    width: 100px;
+    height: 110px;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+body{
+    background-color: orange;
+}
+option{
+    padding: 10px;
+}
+.addInput{
+    margin-left: 15%;
+    margin-right: 20%;
+}
+nav{
+    margin-bottom: 2%;
+    margin-left: 13%;
+    margin-right: 10%;
+    padding: 1%;
+}
+th{
+    background-color: white;
+}
+#addBtn{
+    margin-bottom: 1%;
+    border: 0px;
+    padding: 5px;
+    border-radius: 2px;
+}
+label,p{
+    color: white;
+}
+#cateList{
+    margin-right: 8%;
+    margin-left: 0px;
+}
