@@ -1,0 +1,116 @@
+
+#all{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2%;
+}
+#our_menu{
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3px;
+}
+#our_menu>img{
+    border-radius: 28px;
+    width: 60px;
+    height:60px;
+    background-color: pink;
+}
+.searchDiv{
+    display: flex;
+    margin-bottom: 3px;
+    border: 5px solid white;
+}
+#search{
+    width: 100%;
+    padding: 10px;
+    margin-right: 0px;
+    border-color: white;
+    color: orange;
+}
+span{
+    padding:5px;
+    float: right;
+    border: 0px;
+    background-color: white;
+    font-size: 25px;
+}
+#titleBar{
+    grid-column: 1/2;
+}
+li{
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+a:hover{
+    color: rgb(21, 75, 129);
+    text-decoration: none;
+}
+#viewMenu{
+    grid-column: 2/4;
+    margin-top: 10px;
+}
+.item{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+.item>img{
+    border-radius: 4px;
+    width: 130px;
+    height: 130px;
+}
+section{
+    padding: 10px;
+}
+.orderBtn{
+    background-color:rgb(19, 4, 61);
+    color: white;
+    padding: 5px;
+    border: 0px;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(21, 75, 129);
+    font-size: 20px;
+    font-family: cursive;
+}
+option{
+    padding: 10px;
+}
+.addInput{
+    margin-left: 15%;
+    margin-right: 20%;
+}
+nav{
+    margin-bottom: 2%;
+    margin-left: 13%;
+    margin-right: 10%;
+    padding: 1%;
+    font-weight: bold;
+}
+#addBtn,#btn{
+    margin-bottom: 1%;
+    border: 0px;
+    padding: 5px;
+    border-radius: 2px;
+    color: wheat;
+    background-color: rgb(18, 127, 170);
+    margin-right: 2%;
+}
+#cateList{
+    margin-right: 8%;
+    margin-left: 0px;
+}
+.form-group>label{
+    font-weight: bold;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
