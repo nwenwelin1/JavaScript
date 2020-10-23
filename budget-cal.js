@@ -7,23 +7,21 @@ function getBudget(){
 }
 
 var n=0,str="";;
-var totalExpense=0;
-var expenseList=[],iconList=[];
+var totalExpense=0,i=0;
+var ExpName=[],ExpAmt=[],delete=[],edit=[];
 function getAddExpense(){
     var exName=$("#inputExpense").val();
     var exAmt=$("#inputEAmount").val() || 0;
-    var ex={title:exName,amt:exAmt};
-    expenseList.push(ex);
-    var icon={edit:"<i class='fa fa-edit' style='font-size:15px;'></i>",delete:"<i class='fa fa-trash' style='font-size:15px'></i>"};
-    iconList.push(icon);
-    totalExpense=0;
-    expenseList.forEach(function(value,key){
-        totalExpense+=parseInt(value.amt);
-        str="<tr id='"+key+"'><td>"+value.title+"</td><td>"+value.amt+"</td><td><button onclick='editItem("+key+");'>"+iconList[key].edit+"</button><button onclick='deleteItem("+key+");'>"+iconList[key].delete+"</button></td></tr>";
-        
-    });
+     ExpName[i]=exName;
+    ExpAmt[i]=exAmt;
+    totalExpense+=exAmt;
+   
+    edit[i]="<i class='fa fa-edit' style='font-size:15px;'></i>";
+    delete[i]="<i class='fa fa-trash' style='font-size:15px'></i>";
+    str="<tr id='"+i+"'><td>"+ExpName[i]+"</td><td>"+ExpAmt[i]+"</td><td><button onclick='editItem("+i+");'>"+edit[i]+"</button><button onclick='deleteItem("+i+");'>"+delete[i]+"</button></td></tr>";
    $("#disp").append(str);
    $("#expense").text(totalExpense);
+    i++;
     getBalance();
 }
 
