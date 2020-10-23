@@ -30,7 +30,7 @@ function getBalance(){
 }
 function deleteItem(k){
     $("#"+k).remove();
-    totalExpense-=expenseList[k].amt;
+    totalExpense-=ExpAmt[k];
     $("#expense").text(totalExpense);
     getBalance();
 }
